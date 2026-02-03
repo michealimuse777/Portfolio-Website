@@ -6,20 +6,20 @@ This site highlights selected projects, technical skills, and experiments across
 
 ---
 
-## 🚀 Featured Projects
+## Featured Projects
 
-### 🔐 Obsidian
+### Obsidian
 Privacy-preserving token launchpad on Solana with encrypted bidding and fair allocation.
 - Built with Rust, Anchor, and Solana
 - Confidential computing via Arcium TEE
 - AI-assisted participant validation
 
-### 🤝 Likeyou AI
+### Likeyou AI
 AI-powered matchmaking platform using prompt-based reasoning.
 - Intelligent personalization with Gemini API
 - Built with Next.js and TypeScript
 
-### 🤖 AI Agents Suite
+### AI Agents Suite
 Modular AI agents for automation and workflow orchestration.
 - Social media & Discord moderation
 - Trading automation
@@ -27,7 +27,7 @@ Modular AI agents for automation and workflow orchestration.
 
 ---
 
-## 🧰 Tech Stack
+## Tech Stack
 
 - *Frontend:* Next.js, React, Tailwind CSS  
 - *Backend:* Node.js, Express, REST & GraphQL APIs  
@@ -37,7 +37,7 @@ Modular AI agents for automation and workflow orchestration.
 
 ---
 
-## 📦 Running Locally
+## Running Locally
 
 ```bash
 git clone https://github.com/michealimuse777/Portfolio-Website.git
