@@ -2,6 +2,10 @@
 
 Personal portfolio website showcasing my work in *AI agents, automation systems, and blockchain-enabled products*.
 
+[![Live Demo](https://img.shields.io/badge/Live_Demo-Visit_Site-7C7CFF?style=for-the-badge&logo=vercel&logoColor=white)](https://imusemichaeldev.vercel.app/)
+
+![Portfolio Showcase](public/showcase.png)
+
 This site highlights selected projects, technical skills, and experiments across AI, Web3, and full-stack development.
 
 ---
