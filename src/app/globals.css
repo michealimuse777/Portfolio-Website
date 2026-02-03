@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg: #0B0B0E;
+    --card: #121218;
+    --primary: #7C7CFF;
+    --text: #EDEDED;
+    --muted: #9CA3AF;
+    --border: rgba(255, 255, 255, 0.06);
+  }
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  overscroll-behavior: none;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.no-scrollbar {
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+@layer components {
+  .btn-primary {
+    @apply inline-flex items-center justify-center px-6 py-2 bg-[var(--primary)] text-white font-medium rounded-lg hover:opacity-90 transition-opacity cursor-pointer;
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center justify-center px-6 py-2 border border-zinc-700 bg-transparent text-white font-medium rounded-lg hover:bg-zinc-800 transition-colors cursor-pointer;
+  }
+}
