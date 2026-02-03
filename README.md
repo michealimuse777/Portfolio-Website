@@ -2,7 +2,7 @@
 
 Personal portfolio website showcasing my work in *AI agents, automation systems, and blockchain-enabled products*.
 
-This site highlights selected projects, technical skills, and experiments across AI, Web3, and full-stack development.
+This site highlights selected projects, technical skills, and experiments across AI, Blockchain, and full-stack development.
 
 ---
 
