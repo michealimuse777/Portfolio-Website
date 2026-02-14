@@ -5,6 +5,7 @@ import Link from "next/link";
 
 const navItems = [
     { href: "/", label: "Home", icon: "⌂" },
+
     { href: "/#projects", label: "Projects", icon: "◈" },
     { href: "/blog", label: "Blog", icon: "✎" },
     { href: "/about", label: "About", icon: "◯" },
@@ -26,7 +27,7 @@ export default function MobileNav() {
                             key={item.href}
                             href={item.href}
                             className={`flex flex-col items-center justify-center flex-1 py-2 
-                                       transition-colors active:scale-95 ${isActive ? "text-[#7C7CFF]" : "text-zinc-500"
+                                       transition-colors active:scale-95 ${isActive ? "text-[var(--primary)]" : "text-[var(--muted-foreground)]"
                                 }`}
                         >
                             <span className="text-lg mb-1">{item.icon}</span>

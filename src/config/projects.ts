@@ -29,7 +29,7 @@ export const projects: Project[] = [
         slug: "likeyou",
         description:
             "AI-powered matchmaking platform using intelligent reasoning.",
-        tech: ["Gemini API", "Next.js", "TypeScript", "AI"],
+        tech: ["LLM API", "Next.js", "TypeScript", "AI"],
         status: "WIP",
         liveUrl: "https://likeyou-lac.vercel.app/",
         features: [
@@ -49,6 +49,7 @@ export const projects: Project[] = [
             "Multi-platform automation",
             "Configurable workflows",
             "API integration layer",
+            "Featured: Sentinel Discord Bot",
         ],
     },
 ];

@@ -12,8 +12,8 @@ const techData = [
         items: ["Next.js (React framework)", "Tailwind CSS", "Vercel / Deployment", "React Libraries"],
     },
     {
-        title: "Backend & APIs",
-        items: ["Node.js / Express.js", "REST & GraphQL APIs", "FastAPI", "PostgreSQL", "AI Integration"],
+        title: "Backend & Cloud",
+        items: ["Node.js / Express.js", "FastAPI", "PostgreSQL", "AWS", "VPS / Render", "Rails Deployment", "AI Integration"],
     },
     {
         title: "Blockchain",
@@ -21,7 +21,7 @@ const techData = [
     },
     {
         title: "AI & Automation",
-        items: ["Gemini API", "AI Agents", "Prompt Engineering", "Automation Workflows"],
+        items: ["LLM API", "AI Agents", "Fine-Tuning Models", "Automation Workflows"],
     },
 ];
 

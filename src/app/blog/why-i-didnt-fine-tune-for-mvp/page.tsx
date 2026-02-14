@@ -55,7 +55,7 @@ export default function BlogPost() {
 
                     <h2 className="text-xl font-semibold mt-10 mb-4">Prompt Engineering First</h2>
                     <p className="text-zinc-400 leading-relaxed">
-                        Instead of fine-tuning, I focused on prompt engineering with Gemini&apos;s base model.
+                        Instead of fine-tuning, I focused on prompt engineering with LLM&apos;s base model.
                         The results were surprisingly good. By carefully structuring the prompts - defining
                         what compatibility means, providing scoring rubrics, including negative examples -
                         I got 80% of the way there without any training.
@@ -91,7 +91,7 @@ export default function BlogPost() {
                     <h2 className="text-xl font-semibold mt-10 mb-4">The Lesson</h2>
                     <p className="text-zinc-400 leading-relaxed">
                         Don&apos;t let &quot;best practices&quot; slow you down. The goal of an MVP is learning, not
-                        perfection. Gemini&apos;s base model plus good prompts got me to a shippable product in
+                        perfection. LLM&apos;s base model plus good prompts got me to a shippable product in
                         weeks instead of months. Now I have real user data to inform whether fine-tuning
                         is even necessary.
                     </p>

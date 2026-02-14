@@ -6,8 +6,12 @@
     --card: #121218;
     --primary: #7C7CFF;
     --text: #EDEDED;
-    --muted: #9CA3AF;
+    --muted: #1F1F25;
     --border: rgba(255, 255, 255, 0.06);
+    --muted-foreground: #9CA3AF;
+    /* Adding this to support new components using it */
+    --foreground: #EDEDED;
+    /* Adding this for compatibility */
   }
 }
 

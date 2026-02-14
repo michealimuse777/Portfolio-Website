@@ -44,12 +44,12 @@ export default function BlogPost() {
                     <h2 className="text-xl font-semibold mt-10 mb-4">The Default Should Be APIs</h2>
                     <p className="text-zinc-400 leading-relaxed">
                         Every time you consider training a model, ask: &quot;Can I get 80% of the result with an
-                        API call?&quot; The answer is usually yes. OpenAI, Gemini, Claude - these models are
+                        API call?&quot; The answer is usually yes. OpenAI, LLM, Claude - these models are
                         incredibly capable out of the box.
                     </p>
                     <p className="text-zinc-400 leading-relaxed mt-4">
                         My social media agent doesn&apos;t have a custom model for content generation. It uses
-                        Gemini with a carefully crafted system prompt that includes brand voice guidelines,
+                        LLM with a carefully crafted system prompt that includes brand voice guidelines,
                         example posts, and formatting rules. Zero training required.
                     </p>
 

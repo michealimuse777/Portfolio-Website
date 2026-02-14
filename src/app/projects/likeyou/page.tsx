@@ -29,7 +29,7 @@ export default function LikeyouPage() {
                 </p>
 
                 <div className="mt-6 flex flex-wrap gap-3">
-                    {["Gemini API", "Next.js", "TypeScript", "Supabase", "PostgreSQL"].map((tech) => (
+                    {["LLM API", "Next.js", "TypeScript", "Supabase", "PostgreSQL"].map((tech) => (
                         <span key={tech} className="px-3 py-1 bg-white/5 rounded-md text-sm">
                             {tech}
                         </span>
@@ -88,7 +88,7 @@ export default function LikeyouPage() {
               ┌───────────────┼───────────────┐
               ▼               ▼               ▼
 ┌─────────────────┐  ┌─────────────────┐  ┌─────────────────┐
-│   GEMINI API    │  │    SUPABASE     │  │   SUPABASE      │
+│   LLM API       │  │    SUPABASE     │  │   SUPABASE      │
 │  (AI Reasoning) │  │  (PostgreSQL)   │  │  (Realtime)     │
 │                 │  │  Users/Profiles │  │  Chat/Presence  │
 └─────────────────┘  └─────────────────┘  └─────────────────┘`}
@@ -97,7 +97,7 @@ export default function LikeyouPage() {
                 <div className="mt-6 grid md:grid-cols-3 gap-6 text-sm">
                     <div>
                         <h4 className="font-medium text-white mb-2">AI Layer</h4>
-                        <p className="text-zinc-400">Gemini processes natural language queries and computes compatibility scores.</p>
+                        <p className="text-zinc-400">LLM processes natural language queries and computes compatibility scores.</p>
                     </div>
                     <div>
                         <h4 className="font-medium text-white mb-2">Data Layer</h4>
@@ -116,7 +116,7 @@ export default function LikeyouPage() {
                 <p className="text-zinc-400 mb-8">Every tool was chosen for a specific reason:</p>
                 <div className="grid md:grid-cols-2 gap-6">
                     <div className="bg-[#121218] border border-white/10 p-6 rounded-xl">
-                        <h3 className="font-medium text-lg mb-2">Gemini API</h3>
+                        <h3 className="font-medium text-lg mb-2">LLM API</h3>
                         <p className="text-zinc-400 text-sm">
                             Chosen over OpenAI for better reasoning on nuanced personality matching. The 1M context
                             window allows processing multiple profiles in a single inference call.
@@ -198,7 +198,7 @@ export default function LikeyouPage() {
                     <div className="bg-[#121218] border border-white/10 p-6 rounded-xl">
                         <h3 className="font-medium text-lg mb-2">AI Response Latency</h3>
                         <p className="text-zinc-400 text-sm mb-3">
-                            <strong className="text-white">Problem:</strong> Gemini API calls take 2-5 seconds. Users expect instant search.
+                            <strong className="text-white">Problem:</strong> LLM API calls take 2-5 seconds. Users expect instant search.
                         </p>
                         <p className="text-zinc-400 text-sm">
                             <strong className="text-white">Solution:</strong> Implemented streaming responses with loading states.

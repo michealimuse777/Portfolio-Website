@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { Shield, Newspaper, Brain, Search, Terminal, ArrowRight } from "lucide-react";
 
 export const metadata = {
     title: "AI Agents Suite | Imuse Michael",
@@ -28,7 +29,7 @@ export default function AIAgentsPage() {
                 </p>
 
                 <div className="mt-6 flex flex-wrap gap-3">
-                    {["Python", "LangChain", "FastAPI", "Redis", "OpenAI/Gemini"].map((tech) => (
+                    {["Python", "LangChain", "FastAPI", "Redis", "OpenAI/LLM"].map((tech) => (
                         <span key={tech} className="px-3 py-1 bg-white/5 rounded-md text-sm">
                             {tech}
                         </span>
@@ -78,7 +79,7 @@ export default function AIAgentsPage() {
        ┌──────────────────────┼──────────────────────┐
        ▼                      ▼                      ▼
 ┌─────────────────┐   ┌─────────────────┐   ┌─────────────────┐
-│  SOCIAL AGENT   │   │ MODERATION AGT  │   │  TRADING AGENT  │
+│  SOCIAL AGENT   │   │ SENTINEL AGENT  │   │  TRADING AGENT  │
 │  Twitter/X      │   │ Discord/Slack   │   │  Market Data    │
 │  Content Gen    │   │ Content Filter  │   │  Signal Gen     │
 └─────────────────┘   └─────────────────┘   └─────────────────┘
@@ -87,7 +88,7 @@ export default function AIAgentsPage() {
                               ▼
 ┌─────────────────────────────────────────────────────────────────┐
 │                       LLM INTERFACE                             │
-│  OpenAI / Gemini / Local Models (Ollama)                        │
+│  OpenAI / LLM / Local Models (Ollama)                           │
 └─────────────────────────────────────────────────────────────────┘
                               │
                               ▼
@@ -108,7 +109,74 @@ export default function AIAgentsPage() {
                     </div>
                     <div>
                         <h4 className="font-medium text-white mb-2">LLM Abstraction</h4>
-                        <p className="text-zinc-400">Swap between OpenAI, Gemini, or local models without changing agent code.</p>
+                        <p className="text-zinc-400">Swap between OpenAI, LLM, or local models without changing agent code.</p>
+                    </div>
+                </div>
+            </section>
+
+            {/* Agent Types */}
+            <section className="px-6 md:px-20 py-16 border-t border-white/10">
+                <h2 className="text-2xl font-semibold mb-8">Agent Types</h2>
+                <div className="grid md:grid-cols-2 gap-6">
+                    <div className="bg-[#121218] border border-white/10 p-6 rounded-xl">
+                        <h3 className="font-medium text-lg mb-2">Social Media Agent</h3>
+                        <p className="text-zinc-400 text-sm mb-4">
+                            Automated posting, engagement tracking, and AI-generated responses.
+                        </p>
+                        <ul className="text-zinc-500 text-sm space-y-1">
+                            <li>• Multi-platform scheduling</li>
+                            <li>• Content generation with brand voice</li>
+                            <li>• Engagement analytics</li>
+                        </ul>
+                    </div>
+
+                    {/* Sentinel Agent (Combined Moderation) */}
+                    <Link href="/projects/sentinel" className="block group cursor-pointer h-full">
+                        <div className="bg-[#121218] border border-blue-500/30 p-6 rounded-xl relative overflow-hidden h-full hover:border-blue-500/60 transition-colors">
+                            <div className="absolute inset-0 bg-blue-500/5 group-hover:bg-blue-500/10 transition-colors duration-300"></div>
+                            <div className="relative z-10">
+                                <div className="flex items-center justify-between mb-4">
+                                    <h3 className="font-medium text-lg text-blue-400 group-hover:text-blue-300 transition-colors flex items-center gap-2">
+                                        Sentinel - AI Guardian
+                                        <ArrowRight className="w-4 h-4 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all" />
+                                    </h3>
+                                    <div className="px-2 py-0.5 bg-blue-500/20 text-blue-300 text-xs rounded-full">Live</div>
+                                </div>
+                                <p className="text-zinc-300 text-sm mb-4">
+                                    Autonomous agent that actively protects and informs your server.
+                                    <span className="block mt-2 text-blue-400/80 text-xs font-medium">Click to view details →</span>
+                                </p>
+                                <ul className="text-zinc-500 text-sm space-y-1">
+                                    <li>• <strong className="text-zinc-400">The Cleaner:</strong> Auto-moderates and bans suspicious accounts instantly.</li>
+                                    <li>• <strong className="text-zinc-400">Hybrid Brain:</strong> Trainable via <code>/learn</code> commands. Remembers context.</li>
+                                    <li>• <strong className="text-zinc-400">News Anchor:</strong> Auto-posts crypto news.</li>
+                                    <li>• <strong className="text-zinc-400">Researcher:</strong> Browses web.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </Link>
+
+                    <div className="bg-[#121218] border border-white/10 p-6 rounded-xl">
+                        <h3 className="font-medium text-lg mb-2">Trading Agent</h3>
+                        <p className="text-zinc-400 text-sm mb-4">
+                            Market monitoring and signal generation (analysis only, no execution).
+                        </p>
+                        <ul className="text-zinc-500 text-sm space-y-1">
+                            <li>• Technical indicator monitoring</li>
+                            <li>• Sentiment analysis from social</li>
+                            <li>• Alert notifications</li>
+                        </ul>
+                    </div>
+                    <div className="bg-[#121218] border border-white/10 p-6 rounded-xl">
+                        <h3 className="font-medium text-lg mb-2">Dev Assistant</h3>
+                        <p className="text-zinc-400 text-sm mb-4">
+                            Code review, documentation generation, and CI/CD automation.
+                        </p>
+                        <ul className="text-zinc-500 text-sm space-y-1">
+                            <li>• PR review suggestions</li>
+                            <li>• Auto-generated docs</li>
+                            <li>• Test generation</li>
+                        </ul>
                     </div>
                 </div>
             </section>
@@ -145,57 +213,6 @@ export default function AIAgentsPage() {
                             Task queue for background jobs. Rate limiting per API. Caching
                             LLM responses to reduce costs. Pub/sub for real-time events.
                         </p>
-                    </div>
-                </div>
-            </section>
-
-            {/* Agent Types */}
-            <section className="px-6 md:px-20 py-16 border-t border-white/10">
-                <h2 className="text-2xl font-semibold mb-8">Agent Types</h2>
-                <div className="grid md:grid-cols-2 gap-6">
-                    <div className="bg-[#121218] border border-white/10 p-6 rounded-xl">
-                        <h3 className="font-medium text-lg mb-2">Social Media Agent</h3>
-                        <p className="text-zinc-400 text-sm mb-4">
-                            Automated posting, engagement tracking, and AI-generated responses.
-                        </p>
-                        <ul className="text-zinc-500 text-sm space-y-1">
-                            <li>• Multi-platform scheduling</li>
-                            <li>• Content generation with brand voice</li>
-                            <li>• Engagement analytics</li>
-                        </ul>
-                    </div>
-                    <div className="bg-[#121218] border border-white/10 p-6 rounded-xl">
-                        <h3 className="font-medium text-lg mb-2">Moderation Agent</h3>
-                        <p className="text-zinc-400 text-sm mb-4">
-                            Community moderation for Discord/Slack with configurable rules.
-                        </p>
-                        <ul className="text-zinc-500 text-sm space-y-1">
-                            <li>• Real-time content analysis</li>
-                            <li>• Configurable severity thresholds</li>
-                            <li>• Audit logs for review</li>
-                        </ul>
-                    </div>
-                    <div className="bg-[#121218] border border-white/10 p-6 rounded-xl">
-                        <h3 className="font-medium text-lg mb-2">Trading Agent</h3>
-                        <p className="text-zinc-400 text-sm mb-4">
-                            Market monitoring and signal generation (analysis only, no execution).
-                        </p>
-                        <ul className="text-zinc-500 text-sm space-y-1">
-                            <li>• Technical indicator monitoring</li>
-                            <li>• Sentiment analysis from social</li>
-                            <li>• Alert notifications</li>
-                        </ul>
-                    </div>
-                    <div className="bg-[#121218] border border-white/10 p-6 rounded-xl">
-                        <h3 className="font-medium text-lg mb-2">Dev Assistant</h3>
-                        <p className="text-zinc-400 text-sm mb-4">
-                            Code review, documentation generation, and CI/CD automation.
-                        </p>
-                        <ul className="text-zinc-500 text-sm space-y-1">
-                            <li>• PR review suggestions</li>
-                            <li>• Auto-generated docs</li>
-                            <li>• Test generation</li>
-                        </ul>
                     </div>
                 </div>
             </section>
@@ -245,6 +262,7 @@ export default function AIAgentsPage() {
                         <h3 className="text-lg font-medium mb-4 text-green-400">What Works Today</h3>
                         <ul className="text-zinc-400 space-y-2">
                             <li>• Core orchestrator with scheduling</li>
+                            <li>• Sentinel - AI Guardian (Discord)</li>
                             <li>• Social agent prototype (Twitter)</li>
                             <li>• LLM abstraction layer</li>
                             <li>• Redis-based task queue</li>
@@ -254,7 +272,6 @@ export default function AIAgentsPage() {
                     <div>
                         <h3 className="text-lg font-medium mb-4 text-amber-400">Planned Next</h3>
                         <ul className="text-zinc-400 space-y-2">
-                            <li>• Moderation agent for Discord</li>
                             <li>• Trading signal agent</li>
                             <li>• Web dashboard for configuration</li>
                             <li>• Multi-agent collaboration</li>

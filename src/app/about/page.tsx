@@ -93,7 +93,7 @@ export default function AboutPage() {
                     </div>
                     <div>
                         <h3 className="text-white font-medium mb-3">AI / ML</h3>
-                        <p className="text-sm">Gemini API, OpenAI, LangChain, Prompt Engineering</p>
+                        <p className="text-sm">LLM API, OpenAI, LangChain, Prompt Engineering</p>
                     </div>
                     <div>
                         <h3 className="text-white font-medium mb-3">Blockchain</h3>
